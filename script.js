@@ -1,5 +1,6 @@
 class gameModel{
     constructor(){
+        this.score = 0;
         this.board = this.createBoard();
     }
 
@@ -35,6 +36,7 @@ class gameModel{
         const hole = this.board[id];
         if (hole && hole.status) {
             hole.status = false;
+            this.score += 1;
             return true;
         }
         return false;
@@ -67,6 +69,9 @@ class gameView{
             });
         });
     }
+    updateScore(score){
+        this.scoreElement.textContent = score;
+    }
 }
 class gameController{
     constructor(model, view){
@@ -87,6 +92,7 @@ class gameController{
     handleHoleClick(id){
         const wasHit = this.model.hitHole(id);
         if (wasHit){
+            this.view.updateScore(this.model.score);
             this.view.renderBoard(this.model.board);
         }
     }
