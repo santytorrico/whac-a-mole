@@ -43,3 +43,7 @@ body{
 #timer{
     font-size: 24px;
 }
+.mole {
+  background-image: url("mole.jpeg");
+  background-size: cover;
+}
