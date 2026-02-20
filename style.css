@@ -7,19 +7,19 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.header{
+.game-header{
     flex: 1;
     text-align: center;
     border: 3px solid red;
 }
-.timeLeftContainer{
+.game-timer{
     position: absolute;
     text-align: center;
     top: 0px;
     right: 20px;
     border: 3px solid red;
 }
-.boardContainer{
+.game-board{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@ body{
     display: flex;
     flex-direction: row;
 }
-.circle{
+.game-hole{
     border-radius: 50%;
     border: 2px brown solid;
     width: 200px;
@@ -39,5 +39,7 @@ body{
 
 #score{
     font-size: 24px;
-
+}
+#timer{
+    font-size: 24px;
 }
