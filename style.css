@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    flex: 1;
+    text-align: center;
+    border: 3px solid red;
+}
+.timeLeftContainer{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    right: 20px;
+    border: 3px solid red;
+}
+.boardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid red;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.circle{
+    border-radius: 50%;
+    border: 2px brown solid;
+    width: 200px;
+    height: 200px;
+}
+
+#score{
+    font-size: 24px;
+
+}
