@@ -47,3 +47,7 @@ body{
   background-image: url("mole.jpeg");
   background-size: cover;
 }
+.game-hole.snake {
+    background-image: url("snake.jpeg");
+    background-size: cover;
+}
